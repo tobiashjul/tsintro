@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    	<meta charset="UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-		scale=1.0">
+   	<title>Document</title>
+    	<script src="index.js" defer></script> <!-- Dette er referencen til 	den transpilerede js fil-->
+	<style>
+		.buttondiv{
+				width:150px;
+				height:80px;
+				border-style:solid;
+				border-color:blue;
+				border-width:5px;
+				background:yellow;
+				text-align:center;
+				vertical-align:middle;
+				font-family: Helvetica;
+				color:red;
+			}
+		.flexcontainer{
+				margin:auto;
+				display:flex;
+				width:500px;
+				height:100px;
+				flex-wrap: wrap;
+				flex-direction:row;
+				justify-content:space-between;
+								
+
+			}
+		#theCanvas{
+				border-width:5px;
+				border-style:solid;
+				display:block;
+				margin-left:auto;
+				margin-right:auto;
+				margin-top:50px;
+				margin-bottom:50px;
+				border-color:blue;
+				background:yellow;
+			}
+	</style>
+</head>
+<body>
+	<h1 style="font-family: Helvetica;text-align:center; color:red;">Tryk på en af knapperne for at tegne en figur!</h1>
+	<canvas width="400" height="400" id="theCanvas"></canvas>
+	<div class="flexcontainer">
+		<button class="buttondiv" id="square">Tegn en firkant</button>
+		<button class="buttondiv" id="circle">Tegn en cirkel</button>
+		<button class="buttondiv" id="triangle">Tegn en trekant</button>
+	</div>
+
+
+</body>
+</html>
